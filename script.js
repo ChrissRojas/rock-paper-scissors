@@ -2,7 +2,7 @@ const choices =  ['rock','paper','scissors'];
 
 
 function getRandomInt(min,max) {
-    return Math.floor(Math.random() * (max - min +1)) + min; 
+    return Math.floor(Math.random() * (max - min)) + min; 
 }
 
 
@@ -11,23 +11,23 @@ function getComputerChoice () {
 }
 
 function playRound(playerSelection,compSelection){
-    playerSelection = playerSelection.toLowercase()
+    playerSelection = playerSelection.toLowerCase()
     if (playerSelection ===  compSelection) {
         console.log('draw');
     }else if (playerSelection == 'rock') {
-        if (computerSelection == 'paper'){
+        if (compSelection == 'paper'){
             console.log('You lose, paper beats rock!');
         }else{
             console.log('You win, rock beats scissors');
         }
     }else if(playerSelection =='paper'){
-        if(computerSelection =='scissors'){
+        if(compSelection =='scissors'){
             console.log('You lose, scissors beats paper');
         }else{
             console.log('You win, paper beats rock');
         }
     }else if(playerSelection =='scissors'){
-        if (computerSelection == 'rock'){
+        if (compSelection == 'rock'){
             console.log('You lose, rock beats scissors');
         }else{
             console.log('You win,scissoes beats paper');
@@ -36,5 +36,12 @@ function playRound(playerSelection,compSelection){
 }
 
 function main(){
-    
+    for(let i = 0; i<5 ;i++){
+        player_choice = prompt('Enter a Choice("rock,paper,scissors")');
+        comp_choice = getComputerChoice();
+        console.log(comp_choice);
+        playRound(player_choice,comp_choice);
+    }
 }
+
+main()
