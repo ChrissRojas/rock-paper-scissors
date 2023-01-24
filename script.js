@@ -36,12 +36,7 @@ function playRound(playerSelection,compSelection){
 }
 
 function main(){
-    for(let i = 0; i<5 ;i++){
-        player_choice = prompt('Enter a Choice("rock,paper,scissors")');
-        comp_choice = getComputerChoice();
-        console.log(comp_choice);
-        playRound(player_choice,comp_choice);
-    }
+
 }
 
 main()
