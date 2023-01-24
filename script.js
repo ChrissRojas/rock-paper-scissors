@@ -5,7 +5,7 @@ let player_score_object = document.querySelector('#player-score');
 let comp_score_object = document.querySelector('#comp-score');
 
 player_score_object.textContent = `Your-Score: ${player_score}`;
-comp_score_object.textContent= `Comp-Score: ${comp_score};`
+comp_score_object.textContent= `Comp-Score: ${comp_score}`;
 
 function getRandomInt(min,max) {
     return Math.floor(Math.random() * (max - min)) + min; 
