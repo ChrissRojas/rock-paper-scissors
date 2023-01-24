@@ -35,8 +35,4 @@ function playRound(playerSelection,compSelection){
     }
 }
 
-function main(){
 
-}
-
-main()
