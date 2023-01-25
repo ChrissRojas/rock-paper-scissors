@@ -3,10 +3,16 @@ let comp_score = 0;
 let player_score = 0;
 let player_score_object = document.querySelector('#player-score');
 let comp_score_object = document.querySelector('#comp-score');
-
+let player_choices = document.querySelectorAll('.player-choice');
+let current_choice;
 player_score_object.textContent = `Your-Score: ${player_score}`;
 comp_score_object.textContent= `Comp-Score: ${comp_score}`;
 
+
+
+function playGame(e){
+    console.log(this)
+}
 function getRandomInt(min,max) {
     return Math.floor(Math.random() * (max - min)) + min; 
 }
@@ -42,3 +48,4 @@ function playRound(playerSelection,compSelection){
 }
 
 
+player_choices.forEach(k => k.addEventListener('click',playGame))
