@@ -1,0 +1,50 @@
+body{
+    padding-top: 7%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.intro, .game-container{
+    padding: 0 15% 0 15%;
+}
+
+.intro h1{
+    text-align:center;
+}
+
+.result-container, .game-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.result-container{
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.choice-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.game-container{
+    column-gap: 100px;
+}
+
+
+.choice{
+    border: 10px solid red;
+}
+
+.selected{
+    border-color:gold;
+}
+
+img {
+    width: 140px;
+    height: 140px;
+}

@@ -48,4 +48,4 @@ function playRound(playerSelection,compSelection){
 }
 
 
-player_choices.forEach(k => k.addEventListener('click',playGame))
+player_choices.forEach(k => k.addEventListener('click',play))
